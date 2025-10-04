@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle, rgba(255, 237, 244, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgb(237, 250, 255) 0%, rgb(78, 73, 62) 100%);
     position: relative;
   }
   
@@ -11,16 +11,16 @@ body {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background-image: url('ITFLab_res14/ahhh.jpg');
+    background-image: url('Screenshot\ 2025-03-29\ 035644.png');
     background-size: auto;
     background-position: center;
-    opacity: 0.2;
+    opacity: 0.5;
     z-index: -1;
   }
   
   nav {
     background: #020024;
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, rgb(180, 162, 123) 0%, rgb(126, 108, 86) 35%, rgb(139, 132, 110) 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,8 @@ body {
     width: 100%;
     height: 200px;
     resize: none;
-    background: #f7f7f7;
+    opacity: 0.5;
+    background: #ecded3e1;
   }
   .content {
     display: flex;
