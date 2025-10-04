@@ -1,55 +1,108 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บไซต์ตัวอย่าง</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>ยินดีต้อนรับสู่เว็บไซต์ของฉัน</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">บ้าน</a></li>
-                <li><a href="#services">บริการ</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITF Simple Bank</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <p>68070260</p>
+      <h2>ITF Website</h2>
+      <p>Week 14</p>
+    </nav>
+
+    <header class="header">
+      <img
+        class="logo"
+        src="ITFLab_res14/I Will Punch You Watch Out GIF - Find & Share on GIPHY.gif"
+        alt="Study"
+      />
+      <div>
+        <h1 id="main-title">ITF Simple Bank</h1>
+        <h3 id="subtitle">Welcome to my first HTML + CSS + JS website!</h3>
+      </div>
     </header>
 
-    <section id="home">
-        <h2>เกี่ยวกับเรา</h2>
-        <p>เราคือบริษัทที่เชี่ยวชาญด้านเทคโนโลยีสารสนเทศ</p>
-        <div class="container">
-            <button onclick="alertMessage()">คลิกที่นี่</button>
+    <section class="output-section">
+      <textarea id="output-box" readonly></textarea>
+    </section>
+
+    <main class="content">
+      <section class="account">
+        <h2>Account Overview</h2>
+
+        <div class="info-row">
+          <img src="ITFLab_res14/user.png" alt="Account" />
+          <div>
+            <h3>Account Information</h3>
+            <p style="padding-top: 10px">Name: Danupon Jewpongsawat</p>
+            <p style="padding-top: 10px">Type: Savings Account</p>
+          </div>
         </div>
-    </section>
 
-    <section id="services">
-        <h2>บริการของเรา</h2>
-        <p>เรามีบริการต่างๆ ที่คุณสามารถเลือกใช้ได้</p>
-        <form>
-            <label for="service">เลือกบริการ:</label>
-            <select id="service" name="service">
-                <option value="web-design">ออกแบบเว็บไซต์</option>
-                <option value="seo">SEO</option>
-                <option value="app-development">พัฒนาแอปพลิเคชัน</option>
-            </select>
-            <textarea name="comments" id="comments" cols="30" rows="5" placeholder="ความคิดเห็นเพิ่มเติม"></textarea>
-            <input type="text" id="name" placeholder="ชื่อของคุณ">
-            <button type="submit">ส่งข้อมูล</button>
-        </form>
-    </section>
+        <div class="info-row">
+          <img src="ITFLab_res14/briefcase.png" alt="Balance" />
+          <div>
+            <h3>Balance Information</h3>
+            <div class="flex">
+              <p>Current account</p>
+              <input type="number" class="input-box" id="Currentbox1" />
+            </div>
+            <p>balance:</p>
+            <div class="flex">
+              <p>Current cash</p>
+              <input type="number" class="input-box" id="Currentbox2" />
+            </div>
+            <p>balance:</p>
+            <button onclick="Change()">Change</button>
+          </div>
+        </div>
 
-    <footer>
-        <p>&copy; 2025 บริษัทตัวอย่าง</p>
-    </footer>
+        <div class="info-row">
+          <img src="ITFLab_res14/toolbox.png" alt="Bank Operation" />
+          <div>
+            <h3>Bank Operation</h3>
+            <form>
+              <select name="operation" id="BankOps">
+                <option value="Deposit">Deposit</option>
+                <option value="Withdraw">Withdraw</option>
+              </select>
+              <input type="number" class="input-box" id="BankInput" />
+              <br /><br />
+              <button type="button" onclick="Process()">Process</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
-    <script>
-        function alertMessage() {
-            alert("คุณได้คลิกปุ่มแล้ว!");
-        }
-    </script>
-</body>
+      <section class="financial">
+        <h2>Financial Tools</h2>
+        <div class="info-row">
+          <img src="ITFLab_res14/coins.png" alt="Currency" />
+          <div>
+            <h3>Currency Converter</h3>
+            <div class="flex">
+              <p>Input balance:</p>
+              <input type="number" class="input-box" id="inputmoney" />
+            </div>
+            <div class="flex">
+              <p>Output balance:</p>
+              <input readonly type="number" class="input-box" id="outputmoney"/>
+            </div>
+            <div class="flex">
+              <p>Input currency:</p>
+              <select name="currency" class="currenC" id="ConvertM">
+                <option value="USD">USD</option>
+                <option value="THB">THB</option>
+              </select>
+              <button type="button" onclick="Convert()">Convert</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
