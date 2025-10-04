@@ -16,7 +16,7 @@
     <header class="header">
       <img
         class="logo"
-        src="scared-bunnygirlbree.gif"
+        src="berserk-guts.gif"
         alt="Study"
       />
       <div>
@@ -31,31 +31,31 @@
 
     <main class="content">
       <section class="account">
-        <h2>Account Overview</h2>
+        <h2 id="subtitle">Account Overview</h2>
 
         <div class="info-row">
-          <img src="pfp.png" alt="Account" />
+          <img src="acc.png" alt="Account" />
           <div>
-            <h3>Account Information</h3>
-            <p style="padding-top: 10px">Name: Danupon Jewpongsawat</p>
-            <p style="padding-top: 10px">Type: Savings Account</p>
+            <h3 id="subtitle">Account Information</h3>
+            <p style="padding-top: 10px" id="subtitle">Name: Pisit Thitisereewong</p>
+            <p style="padding-top: 10px" id="subtitle">Type: Savings Account</p>
           </div>
         </div>
 
         <div class="info-row">
-          <img src="Money.png" alt="Balance" />
+          <img src="di.png" alt="Balance" />
           <div>
-            <h3>Balance Information</h3>
+            <h3 id="subtitle">Balance Information</h3>
             <div class="flex">
-              <p>Current account</p>
+              <p id="subtitle">Current account</p>
               <input type="number" class="input-box" id="Currentbox1" />
             </div>
-            <p>balance:</p>
+            <p id="subtitle">balance:</p>
             <div class="flex">
-              <p>Current cash</p>
+              <p id="subtitle">Current cash</p>
               <input type="number" class="input-box" id="Currentbox2" />
             </div>
-            <p>balance:</p>
+            <p id="subtitle">balance:</p>
             <button onclick="Change()">Change</button>
           </div>
         </div>
@@ -63,11 +63,11 @@
         <div class="info-row">
           <img src="bank.png" alt="Bank Operation" />
           <div>
-            <h3>Bank Operation</h3>
+            <h3 id="subtitle">Bank Operation</h3>
             <form>
               <select name="operation" id="BankOps">
-                <option value="Deposit">Deposit</option>
-                <option value="Withdraw">Withdraw</option>
+                <option value="Deposit" id="subtitle">Deposit</option>
+                <option value="Withdraw" id="subtitle">Withdraw</option>
               </select>
               <input type="number" class="input-box" id="BankInput" />
               <br /><br />
@@ -78,24 +78,24 @@
       </section>
 
       <section class="financial">
-        <h2>Financial Tools</h2>
+        <h2 id="subtitle">Financial Tools</h2>
         <div class="info-row">
-          <img src="coin.png" alt="Currency" />
+          <img src="coins.png" alt="Currency" />
           <div>
-            <h3>Currency Converter</h3>
+            <h3 id="subtitle">Currency Converter</h3>
             <div class="flex">
-              <p>Input balance:</p>
+              <p id="subtitle">Input balance:</p>
               <input type="number" class="input-box" id="inputmoney" />
             </div>
             <div class="flex">
-              <p>Output balance:</p>
+              <p id="subtitle">Output balance:</p>
               <input readonly type="number" class="input-box" id="outputmoney"/>
             </div>
             <div class="flex">
-              <p>Input currency:</p>
+              <p id="subtitle">Input currency:</p>
               <select name="currency" class="currenC" id="ConvertM">
-                <option value="USD">USD</option>
-                <option value="THB">THB</option>
+                <option value="USD" id="subtitle">USD</option>
+                <option value="THB" id="subtitle">THB</option>
               </select>
               <button type="button" onclick="Convert()">Convert</button>
             </div>
